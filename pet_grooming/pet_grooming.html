@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Grooming Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pet Grooming Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#hairstyles">Hairstyles</a></li>
+                <li><a href="#bathing">Bathing</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hairstyles">
+        <h2>Pet Hairstyles</h2>
+        <p>We offer a variety of pet hairstyles to keep your furry friend looking their best.</p>
+        <div class="hairstyles-gallery">
+            <div class="hairstyle">
+                <img src="./style1.jpg" alt="Hairstyle 1">
+                <p>Bow Hairstyle</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./trim.jpg" alt="Hairstyle 2">
+                <p>Puppy Trim</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./lion.jpg" alt="Hairstyle 3">
+                <p>Lion Cut</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./braids.webp" alt="Hairstyle 3">
+                <p>Little Braids</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./bands.jpg" alt="Hairstyle 3">
+                <p>Elastic Bands</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./knot.webp" alt="Hairstyle 3">
+                <p>Top Knot</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hairstyles">
+        <h2>Pet Bathing</h2>
+        <p>We provide thorough cleaning services to keep your pet healthy and happy.</p>
+        <div class="hairstyles-gallery">
+            <div class="hairstyle">
+                <img src="./basic.jpg" alt="Hairstyle 1">
+                <p>Basic Bath</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./special.jpg" alt="Hairstyle 2">
+                <p>Special Bath</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./lux.jpg" alt="Hairstyle 3">
+                <p>Luxury Bath</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./comb.webp" alt="Hairstyle 3">
+                <p>Combined Bath</p>
+            </div>
+            <div class="hairstyle">
+                <img src="./pup.webp" alt="Hairstyle 3">
+                <p>Puppy Bath</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment">
+        <h2>Book Grooming Appointment </h2>
+        <form method="post" action="pet_grooming.php">
+            <label for="pet-name">Pet's Name:</label>
+            <input type="text" id="pet-name" name="pet-name" required>
+
+            <label for="owner-name">Owner's Name:</label>
+            <input type="text" id="owner-name" name="owner-name" required>
+
+            <label for="service">Service:</label>
+            <select id="service" name="service">
+                <option value="hairstyling">Hairstyling</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="bathing">Bathing</option>
+            </select>
+
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="appointment-time">Appointment Time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+
+            <button type="submit" name="submit">Book Appointment</button>
+        </form>
+    </section>
+</body>
+</html>

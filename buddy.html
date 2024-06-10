@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy's Profile</title>
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Alfa Slab One', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Icon Styles */
+        .icons {
+            text-align: right;
+        }
+
+        .icons a {
+            margin-left: 10px;
+            color: #333;
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 20px;
+        }
+
+        .dog-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .dog-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dog-info {
+            margin-top: 20px;
+        }
+
+        .dog-name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .dog-details {
+            font-size: 18px;
+            color: #0c0505;
+            margin-bottom: 10px;
+        }
+
+        .additional-photos img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+     .adopt-button {
+    background-color: #6c0723;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center; /* Center text horizontally */
+    text-decoration: none;
+    display: block; /* Change to block to center */
+    margin: 0 auto; /* Center the block */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.adopt-button:hover {
+    background-color: #5c051c; /* Darker Green */
+}
+
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>Buddy's Profile</h1>
+    <div class="dog-photo">
+        <img src="./img2/buddy.jpg" alt="Buddy's Photo">
+    </div>
+    <div class="dog-info">
+        <div class="dog-name">Buddy</div>
+        <div class="dog-details"><strong>Age:</strong> 3 years</div>
+        <div class="dog-details"><strong>Gender:</strong> Male</div>
+        <div class="dog-details"><strong>Weight:</strong> 30kg</div>
+        <div class="dog-details"><strong>Date of Adoption:</strong> 2024-05-10</div>
+        <div class="dog-details"><strong>About me:</strong> Buddy has been socialized with children and is comfortable around them. He enjoys being outdoors and would thrive in an active household where he can receive plenty of exercise and attention. He's a loyal companion looking for his forever home where he'll be loved and cared for.</div>
+        <div class="dog-details"><strong>Personality:</strong> Friendly, playful, and affectionate. Buddy loves to go for walks and play fetch. He enjoys spending time with people and gets along well with other dogs. He's also house-trained and knows basic commands like sit, stay, and fetch.
+            <p><strong>Health:</strong> Buddy is in good health, up to date on vaccinations, and has been neutered. He has no known medical issues and is regularly checked by a veterinarian.</p>
+        </div>
+        <h2>Buddy's Photos</h2>
+    </div>
+    
+        <div class="additional-photos">
+            <img src="./img2/buddy1.jpg" alt="Additional Dog Photo">
+            <img src="./img2/buddy2.jpg" alt="Additional Dog Photo">
+        </div>
+    </div>
+</div>
+             <form action="./adoptme.php" method="post">
+                    <button type="submit" class="adopt-button">Adopt Me</button>
+             </form>
+
+</body>
+</html>

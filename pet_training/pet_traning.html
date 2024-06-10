@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Training Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pet Training Information</h1>
+        <nav>
+            <ul>
+                <li><a href="#importance">Importance</a></li>
+                <li><a href="#types">Types of Training</a></li>
+                <li><a href="#trainers">Professional Trainers</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="importance">
+        <h2>Importance of Pet Training</h2>
+        <p>Pet training is essential for fostering a harmonious relationship between pets and their owners. It ensures that pets understand and obey commands, which can significantly enhance their safety and well-being. Proper training helps prevent behavioral issues such as excessive barking, chewing, and aggression, making pets more pleasant companions. Additionally, training provides mental stimulation, which is crucial for preventing boredom and related destructive behaviors. It also strengthens the bond between pets and their owners, as the training process involves positive reinforcement and mutual trust. Ultimately, well-trained pets are happier, healthier, and more integrated into family life, contributing to a more peaceful and enjoyable household.</p>
+        <p>Training also plays a crucial role in socializing pets, teaching them how to interact appropriately with other animals and people. This is particularly important in preventing fear-based aggression and ensuring that pets are confident and comfortable in various environments. Consistent training can improve a pet's adaptability, making it easier to travel, visit the vet, or welcome guests into the home. Moreover, training enhances communication between pets and their owners, enabling clearer and more effective interactions. By investing time in training, owners can address and correct undesirable behaviors early, leading to a more balanced and well-adjusted pet. Overall, training is a foundational aspect of responsible pet ownership, contributing to the overall quality of life for both pets and their families.</p>
+        <ul>
+            <p>Our 'Get a Pet' will help to get these all training skills for your fur-ever friend.</p>
+            <li>Improve behavior</li>
+            <li>Strengthen the bond between pet and owner</li>
+            <li>Ensure safety for both pet and owner</li>
+            <li>Provide mental stimulation</li>
+            <li>Promote socialization skills</li>
+        </ul>
+    </section>
+
+    <section id="types">
+        <h2>Types of Pet Training</h2>
+        <p>Here are some common types of pet training:</p>
+        <ul>
+            <li><strong>Obedience Training:</strong> Basic commands such as sit, stay, and come.</li>
+            <li><strong>Agility Training:</strong> Physical activities to improve coordination and confidence.</li>
+            <li><strong>Behavioral Training:</strong> Addressing specific issues such as barking or chewing.</li>
+            <li><strong>Socialization:</strong> Helping pets to interact positively with other animals and people.</li>
+        </ul>
+    </section>
+
+    <section id="trainers">
+        <h2>Meet Our Professional Trainers</h2>
+        <div class="trainers-gallery">
+            <div class="trainer">
+                <img src="./testimonial-2.jpg" alt="Trainer 1">
+                <p>John Doe</p>
+            </div>
+            <div class="trainer">
+                <img src="./testimonial-1.jpg" alt="Trainer 2">
+                <p>Jane Smith</p>
+            </div>
+            <div class="trainer">
+                <img src="./team-2.jpg" alt="Trainer 3">
+                <p>Maxine Johnson</p>
+            </div>
+            <div class="trainer">
+                <img src="./3.jpg" alt="Trainer 2">
+                <p>Mark Willson</p>
+            </div>
+            <div class="trainer">
+                <img src="./4.jpg" alt="Trainer 3">
+                <p>Sara Smith</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment">
+        <h2>Book an Appointment for Training</h2>
+        <form action="book_appointment.php" method="post">
+            <label for="pet-name">Pet's Name:</label>
+            <input type="text" id="pet-name" name="pet-name" required>
+    
+            <label for="owner-name">Owner's Name:</label>
+            <input type="text" id="owner-name" name="owner-name" required>
+    
+            <label for="trainer">Choose Trainer:</label>
+            <select id="trainer" name="trainer">
+                <option value="john-doe">John Doe</option>
+                <option value="jane-smith">Jane Smith</option>
+                <option value="Maxine Johnson">Maxine Johnson</option>
+                <option value="Mark Willson">Mark Willson</option>
+                <option value="Sara Smith">Sara Smith</option>
+            </select>
+    
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+    
+            <label for="appointment-time">Appointment Time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+    
+            <button type="submit" name="submit">Book Appointment</button>
+        </form>
+    </section>
+</body>
+</html>

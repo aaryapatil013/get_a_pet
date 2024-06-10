@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Me here</title>
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Alfa Slab One', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Icon Styles */
+        .icons {
+            text-align: right;
+        }
+
+        .icons a {
+            margin-left: 10px;
+            color: #333;
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 20px;
+        }
+
+        .dog-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            cursor: pointer; /* Added to make the card clickable */
+        }
+
+        .dog-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .dog-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dog-info {
+            flex: 1;
+        }
+
+        .dog-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .dog-details {
+            color: #666;
+        }
+
+        .icon {
+            margin-left: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .add-to-cart,
+        .add-to-wishlist {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>Buy Me here</h1>
+    <div class="dog-card">
+        <div class="dog-photo">
+            <img src="./img2/mini.jpg" alt="Dog Photo">
+        </div>
+        <div class="dog-info">
+            <div class="dog-name"><a href="mini.html">Mini</a></div>
+            <div class="dog-details">Age: 3 years</div>
+            <div class="dog-details">Breed: Labrador Retriever</div>
+        </div>
+    </div>
+    <div class="dog-card">
+        <div class="dog-photo">
+            <img src="./img2/tuffy.jpg" alt="Dog Photo">
+        </div>
+        <div class="dog-info">
+            <div class="dog-name"><a href="./tuffy.html">Tuffy</a></div>
+            <div class="dog-details">Age: 3 Months</div>
+            <div class="dog-details">Breed: German Shephred</div>
+        </div>
+    </div>
+    <div class="dog-card">
+        <div class="dog-photo">
+            <img src="./img2/tommy.jpg" alt="Dog Photo">
+        </div>
+        <div class="dog-info">
+            <div class="dog-name"><a href="tommy.html">Tommy</a></div>
+            <div class="dog-details">Age: 1 Month</div>
+            <div class="dog-details">Breed: Golden Retriever</div>
+        </div>
+    </div>
+    <div class="dog-card">
+        <div class="dog-photo">
+            <img src="./img2/husky.jpg" alt="Dog Photo">
+        </div>
+        <div class="dog-info">
+            <div class="dog-name"><a href="husky.html">Husky</a></div>
+            <div class="dog-details">Age: 3 Months</div>
+            <div class="dog-details">Breed: Siberian Husky</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

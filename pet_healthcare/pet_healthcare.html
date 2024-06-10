@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Vaccination Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pet Vaccination Information</h1>
+    </header>
+    <nav>
+        <a href="#about">About Vaccination</a>
+        <a href="#appointments">Make Appointment</a>
+    </nav>
+    <section id="about">
+        <h2>About Pet Vaccination</h2>
+        <p>Keeping your pet up-to-date with vaccinations is crucial for their health and well-being. Vaccinations protect pets from various contagious and potentially deadly diseases.</p>
+        <p>Common vaccinations for pets include:</p>
+        <ul>
+            <li>Rabies</li>
+            <p>Rabies vaccination is essential for protecting pets from the deadly rabies virus, which can be transmitted through the bite of an infected animal. Vaccination not only safeguards the health of pets but also prevents the spread of the virus to humans. It is typically administered as a series of injections, starting when pets are young and followed by regular boosters throughout their lives. By keeping pets up-to-date with rabies vaccinations, pet owners contribute to public health and ensure the safety of their communities.</p>
+            <li>Distemper</li>
+            <p>Pet vaccination against distemper is crucial for protecting dogs from this highly contagious and often fatal viral disease. Canine distemper affects the respiratory, gastrointestinal, and nervous systems, causing symptoms such as fever, coughing, vomiting, diarrhea, seizures, and paralysis. Vaccination is the most effective way to prevent distemper, ensuring pets are safeguarded from this severe illness. Puppies should begin their vaccination series at six to eight weeks of age, with boosters administered according to the veterinarian's schedule. Regular vaccinations are essential to maintain immunity and protect the broader pet community from outbreaks.</p>
+            <li>Parvovirus</li>
+            <p>Parvovirus vaccination is crucial for protecting dogs from the highly contagious and potentially fatal canine parvovirus. This virus attacks the gastrointestinal tract, causing severe vomiting, diarrhea, and dehydration. Puppies are especially vulnerable, but the vaccination is effective in providing immunity. Typically administered in a series of shots starting at six to eight weeks of age, followed by boosters, this vaccine is an essential part of a dog's routine healthcare. Regular vaccination helps ensure dogs remain healthy and reduces the spread of the virus within the canine community.</p>
+            <li>Adenovirus</li>
+            <p>Canine adenovirus vaccination is crucial for protecting dogs against adenovirus type 1 (CAV-1) and type 2 (CAV-2). CAV-1 causes infectious canine hepatitis, a severe liver infection, while CAV-2 is associated with respiratory infections like kennel cough. Vaccination helps prevent these diseases, safeguarding dogs from potentially fatal liver damage and reducing the spread of respiratory illnesses. Administered typically as part of the core vaccines in a combination shot, the adenovirus vaccine is essential for maintaining overall canine health and preventing outbreaks in dog populations.</p>
+            <li>Leptospirosis</li>
+            <p>Leptospirosis is a bacterial infection that can affect dogs and other animals, including humans. Vaccinating pets against leptospirosis is crucial as it helps prevent serious health issues such as kidney damage, liver failure, and even death. The vaccine is typically administered annually and is especially important for pets that spend time outdoors or in areas with standing water, where the bacteria are commonly found. Vaccination not only protects the pet but also helps prevent the spread of the infection to humans and other animals.</p>
+            <li>And more...</li>
+        </ul>
+        <p>Consult with your veterinarian to determine the appropriate vaccination schedule for your pet based on their age, health status, and lifestyle.</p>
+    </section>
+    <section id="appointments">
+        <h2>Make an Appointment</h2>
+        <form action="appointment.php" method="post">
+            <label for="pet_name">Pet Name:</label>
+            <input type="text" id="pet_name" name="pet_name" required>
+            <label for="owner_name">Your Name:</label>
+            <input type="text" id="owner_name" name="owner_name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="preferred_date">Preferred Date:</label>
+            <input type="date" id="preferred_date" name="preferred_date" required>
+            <label for="message">Message (optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <input type="submit" name="submit" value="Submit Appointment Request">
+        </form>
+    </section>
+</body>
+</html>
